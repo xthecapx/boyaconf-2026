@@ -1,0 +1,21 @@
+{
+  "name": "boyaconf-2026",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Charla en español para BoyaConf 2026: Rompiendo RSA, un atraco en cuatro actos (con rutina de stand-up).",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "pdf": "node scripts/pdf.mjs"
+  },
+  "dependencies": {
+    "reveal.js": "^6.0.2",
+    "revelab": "^0.3.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
+  }
+}
+
