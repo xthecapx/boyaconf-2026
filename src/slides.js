@@ -158,7 +158,7 @@ const talk = [
 
   // ───────────────────────── Acto 1 ─────────────────────────
   {
-    id: 'acto1-caja', title: 'Acto 1 · “Nadie lee números”', seconds: 45,
+    id: 'acto1-caja', title: 'Acto 1 · Números: “Nadie lee números”', seconds: 45,
     html: `<div class="comic-strip">
         <div class="comic-panel panel-ale fragment">
           <span class="comic-num">1</span>
@@ -432,7 +432,7 @@ const talk = [
 
   // ───────────────────────── Acto 4 ─────────────────────────
   {
-    id: 'acto4-qpu', title: 'Acto 4 · “Nadie tiene uno de esos en un carro”', seconds: 45,
+    id: 'acto4-qpu', title: 'Acto 4 · Shor: “Nadie anda con uno de esos en la cuadra”', seconds: 45,
     html: `<div class="comic-strip">
         <div class="comic-panel panel-brayan fragment">
           <span class="comic-num">1</span>
@@ -447,7 +447,7 @@ const talk = [
         <div class="comic-panel panel-punch fragment">
           <span class="comic-num">3</span>
           <div class="comic-head"><span class="comic-avatar">🧢</span><span class="cast-tag tag-brayan">Brayan</span></div>
-          <p class="comic-bubble">“Son equipos de laboratorio a <strong>−273 °C</strong>. Nadie tiene uno en un carro en nuestra cuadra.” ❄️<em class="comic-aside aside-brayan fragment fade-up">relajá, mor!</em></p>
+          <p class="comic-bubble">“Esa vuelta necesita <strong>resto de frío y un cuarto gigante</strong>. Nadie anda con uno de esos en la cuadra.” ❄️<em class="comic-aside aside-brayan fragment fade-up">relajá, mor!</em></p>
         </div>
       </div>`,
     notes: 'Tres viñetas tipo cómic, igual que en los Actos 1, 2 y 3. Brayan se confía porque un QPU superconductor es equipo de laboratorio más frío que el espacio exterior (~15 mK). Pero no necesitamos tenerlo en el carro: nos conectamos por la nube.',
@@ -616,12 +616,12 @@ const talk = [
     html: `<div class="qpu-real-stage">
         <div class="qpu-photo-frame">
           <img class="qpu-img-base" src="${asset('qpu-real.jpg')}" alt="Computador cuántico superconductor real con tubos de cobre y un chip diminuto en la base" />
-          <img class="qpu-img-ruana fragment" src="${asset('qpu-ruana.jpg')}" alt="El mismo computador cuántico ahora usando una ruana tradicional de Boyacá" />
-          <div class="qpu-ruana-badge">🥶 A −273 °C… hasta la QPU necesita ruana en Boyacá</div>
+          <img class="qpu-img-ruana fragment" data-fragment-index="1" src="${asset('qpu-ruana.jpg')}" alt="El mismo computador cuántico ahora usando una ruana tradicional de Boyacá" />
+          <div class="qpu-ruana-badge fragment fade-up" data-fragment-index="0">🥶 Acá en Boyacá no necesita nevera… necesita ruana</div>
         </div>
         <div class="qpu-facts">
           <span>🏢 <b>Cuarto gigante</b> de control y criogenia</span>
-          <span>❄️ <b>Nevera de tubos de cobre</b> a ~0 Kelvin (−273 °C)</span>
+          <span>❄️ <b>Nevera de cobre bañado en oro</b> a ~0 Kelvin</span>
           <span>🔬 <b>Chip diminuto</b> abajo · altísimo costo y recursos</span>
         </div>
       </div>`,
@@ -641,10 +641,10 @@ const talk = [
 ];
 
 const dividers = {
-  'acto1-caja': { n: 1, title: 'Números', sub: 'Una codificación no es un secreto' },
-  'acto2-cesar': { n: 2, title: 'César', sub: 'Veinticinco claves no guardan un secreto' },
-  'acto3-candado': { n: 3, title: 'RSA', sub: 'La clave es pública; los factores no' },
-  'acto4-qpu': { n: 4, title: 'Shor', sub: 'Hardware prestado, otra escala' },
+  'acto1-caja': { n: 1, title: 'Números', sub: '“Nadie lee números”' },
+  'acto2-cesar': { n: 2, title: 'César', sub: 'Desplazar letras' },
+  'acto3-candado': { n: 3, title: 'RSA', sub: 'Dos llaves en vez de una' },
+  'acto4-qpu': { n: 4, title: 'Shor', sub: '“Nadie anda con uno de esos en la cuadra”' },
 };
 
 const divider = ({ n, title, sub }) => ({

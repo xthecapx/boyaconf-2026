@@ -519,10 +519,11 @@
 
 .qpu-real-stage { display: flex; flex-direction: column; gap: 16px; }
 .qpu-photo-frame { position: relative; width: 100%; height: 475px; border-radius: 16px; overflow: hidden; border: 3px solid var(--rlab-color-text); box-shadow: 0 10px 26px rgba(15, 23, 42, 0.16); background: #0b1026; }
-.qpu-photo-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; margin: 0; }
-.qpu-img-ruana { transition: opacity 0.65s ease !important; }
-.qpu-ruana-badge { position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%) translateY(10px); padding: 10px 22px; border-radius: 999px; background: rgba(20, 22, 34, 0.92); border: 2px solid #f59e0b; color: #fef3c7; font-size: 23px; font-weight: 800; white-space: nowrap; opacity: 0; transition: opacity 0.5s ease 0.15s, transform 0.5s ease 0.15s; pointer-events: none; }
-.qpu-photo-frame:has(.qpu-img-ruana.visible) .qpu-ruana-badge { opacity: 1; transform: translateX(-50%) translateY(0); }
+.reveal .qpu-photo-frame img { position: absolute; inset: 0; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important; object-fit: cover; object-position: center center; margin: 0 !important; display: block; }
+.qpu-img-ruana { z-index: 2; transition: opacity 0.65s ease !important; }
+.qpu-ruana-badge { position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 3; padding: 10px 22px; border-radius: 999px; background: rgba(20, 22, 34, 0.92); border: 2px solid #f59e0b; color: #fef3c7; font-size: 23px; font-weight: 800; white-space: nowrap; pointer-events: none; }
+.reveal .slides section .qpu-ruana-badge.fragment.fade-up { transform: translateX(-50%) translateY(14px); }
+.reveal .slides section .qpu-ruana-badge.fragment.fade-up.visible { transform: translateX(-50%) translateY(0); }
 .qpu-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .qpu-facts span { padding: 12px 14px; border-radius: 10px; background: var(--rlab-color-bg-light); border: 2px solid var(--rlab-color-border); font-size: 19px; text-align: center; color: var(--rlab-color-text); }
 
