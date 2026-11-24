@@ -35,32 +35,32 @@ const talk = [
     bit: 'Sin chiste aquí. Sonreír, mirar al público, respirar. El primer chiste va en la siguiente.'
   },
   {
-    id: 'ultimo', title: 'Bienvenidos a la última charla del día', seconds: 75, kind: 'standup-slide',
+    id: 'ultimo', title: 'Bienvenidos al turno después del almuerzo', seconds: 75, kind: 'standup-slide',
     html: `<div class="standup-visual">
-        <div class="standup-barrier" aria-label="Soy lo único entre ustedes y la salida">
-          <div class="barrier-item"><span class="barrier-emoji">👥</span><small>Ustedes</small></div>
+        <div class="standup-barrier" aria-label="Soy lo único entre el almuerzo y la siesta">
+          <div class="barrier-item"><span class="barrier-emoji">🍽️</span><small>El almuerzo</small></div>
           <span class="barrier-line" aria-hidden="true"></span>
           <div class="barrier-item barrier-me"><span class="barrier-emoji">🎤</span><small>Yo</small></div>
           <span class="barrier-line" aria-hidden="true"></span>
-          <div class="barrier-item"><span class="barrier-emoji">🚪</span><small>La salida</small></div>
+          <div class="barrier-item"><span class="barrier-emoji">😴</span><small>La siesta</small></div>
         </div>
         <div class="standup-cards">
           <div class="standup-card fragment">
-            <span class="card-emoji">🕘 → 😴</span>
-            <strong>Desde las 9 am</strong>
+            <span class="card-emoji">📅 → 🔄</span>
+            <strong>Iba de último</strong>
           </div>
           <div class="standup-card card-deal fragment">
-            <span class="card-emoji">🤝 ⏱️ 30m</span>
-            <strong>El trato</strong>
+            <span class="card-emoji">🍲 → ⚡</span>
+            <strong>Misión: despertarlos</strong>
           </div>
           <div class="standup-card fragment">
-            <span class="card-emoji">🕵️‍♂️ → 🍻</span>
-            <strong>1 crimen y libres</strong>
+            <span class="card-emoji">🕵️‍♂️ → ☕</span>
+            <strong>1 crimen en 30m</strong>
           </div>
         </div>
       </div>`,
-    notes: 'Cold open de stand-up. 1) Señalar el diagrama arriba: «Soy lo único entre ustedes y la salida». 2) Primer avance (Desde las 9 am): «Sé que están cansados por todas las charlas desde las 9 am». 3) Segundo avance (El trato): «Pero hagamos un trato: 30 minutos». 4) Tercer avance (1 crimen y libres): «Hablemos sobre cómo cometer un crimen, y nos vamos, felices».',
-    bit: 'Setup: «Soy lo único entre ustedes y la salida.» Pausa. «Sé que están cansados por todas las charlas desde las 9 am… pero hagamos un trato: 30 minutos, hablemos sobre “cómo cometer un crimen”, y nos vamos, felices.» Crowd work: «Levanten la mano si siguen despiertos… Ahora los que la levantaron por obligación.» (Callback al cierre.)'
+    notes: 'Cold open de stand-up post-almuerzo. 1) Señalar el diagrama arriba: «Soy lo único entre el almuerzo y la siesta». 2) Primer avance (Iba de último): «En la agenda me esperaban de último, pero me tocó cambiar al primer turno de la tarde». 3) Segundo avance (Misión: despertarlos): «Así que tengo la misión oficial de despertarlos después del almuerzo». 4) Tercer avance (1 crimen en 30m): «Y nada quita más el sueño que aprender a cometer un crimen en 30 minutos».',
+    bit: 'Setup: «En la agenda me esperaban de último… pero me cambiaron al primer turno después del almuerzo. O sea, pasé de competir contra la cerveza a competir contra la siesta.» Pausa. «Mi misión hoy es despertarlos en 30 minutos… enseñándoles cómo cometer un crimen.»'
   },
   {
     id: 'mensajes', title: '¿Quién mandó un mensaje hoy?', seconds: 60, kind: 'standup-slide meme-slide',
